@@ -66,14 +66,14 @@ while (contin < 1) {
     console.log("player:" + player + " computer:" + computer + " Result:" + gameResult)
 
     //log Score
-    window.confirm("Player chose: " + iconChoice(player) + "\nComputer chose: " + iconChoice(computer) + "\nYou " + gameResult + "!");
+    window.confirm("Player chose: " + iconChoice(player) + "\nComputer chose: " + iconChoice(computer) + "\nYou " + gameResult + "!" );
 
 
    gameResults[gameResult] = gameResults[gameResult] + 1 ; 
 
     console.log( gameResults.Won + gameResults.Lost + gameResults.Tied)
     //Ask to replay
-    continueChoice = window.confirm("Would you like to try again?");
+    continueChoice = window.confirm("Would you like to try again?\nWins: " + gameResults.Won + "\nLosses: " + gameResults.Lost + "\nTied: " + gameResults.Tied );
     if (continueChoice) {
         contin = 0;
     } else {
