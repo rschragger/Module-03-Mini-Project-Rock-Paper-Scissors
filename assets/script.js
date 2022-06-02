@@ -26,7 +26,7 @@ function playerChoice() {
     //Make sure we get a proper choice
     let i = 0;
     while (i < 1) {
-        pc = window.prompt("Please select RemotePlayback, Paper or Scissors using the first letter:", "R,P,S");
+        pc = window.prompt("Please select RemotePlayback, Paper or Scissors using the first letter:");
         pc = pc.toUpperCase();
         if (rpsArray.includes(pc) == false) {
             window.alert("Please only use 1 letter of either R, P or S")
